@@ -33,7 +33,7 @@ require_once 'vendor/autoload.php';
 use Ruhul\EXLQuery\EXLQ;
 
 try {
-    $result = EXLQ::from("example.Excel")
+    $result = EXLQ::from("example.xls")
         ->select('id', 'name')
         ->get();
 
@@ -51,7 +51,7 @@ You can perform queries on your Excel:
 
 ```php
 
-$result = EXLQ::from("example.Excel")
+$result = EXLQ::from("example.xls")
         ->select('id', 'name')
         //->select(['id', 'name'])
         ->where('id', 2)
@@ -78,29 +78,29 @@ $result = EXLQ::from("example.Excel")
 ```php
 
 // To Get All Result
-$result = EXLQ::from("example.Excel")->all();
+$result = EXLQ::from("example.xls")->all();
 
 // To Get All Sorted Result
-$result = EXLQ::from("example.Excel")->orderBy('id', 'desc')->all();
+$result = EXLQ::from("example.xls")->orderBy('id', 'desc')->all();
 
 // To Get Specific Row
-$result = EXLQ::from("example.Excel")->where('id', 1)->row();
+$result = EXLQ::from("example.xls")->where('id', 1)->row();
 
 // To Get First Result
-$result = EXLQ::from("example.Excel")->where('id', 1)->first();
+$result = EXLQ::from("example.xls")->where('id', 1)->first();
 
 // To Get Last Result
-$result = EXLQ::from("example.Excel")->where('id', 1)->last();
+$result = EXLQ::from("example.xls")->where('id', 1)->last();
 
 // To Get nth row
-$result = EXLQ::from("example.Excel")->getNth(2); // [0-n]
+$result = EXLQ::from("example.xls")->getNth(2); // [0-n]
 
 // Check Is row exist
-$result = EXLQ::from("example.Excel")->where('id', 1)->hasData(); // boolean
-$result = EXLQ::from("example.Excel")->where('id', 1)->doesExist(); // boolean
+$result = EXLQ::from("example.xls")->where('id', 1)->hasData(); // boolean
+$result = EXLQ::from("example.xls")->where('id', 1)->doesExist(); // boolean
 
 // To Get All Sorted Result
-$result = EXLQ::from("example.Excel")->orderBy('id', 'desc')->all();
+$result = EXLQ::from("example.xls")->orderBy('id', 'desc')->all();
 
 ```
 
@@ -126,7 +126,7 @@ You can add criteria and specify limit and offset for your query results:
 
 ```php
 
-$result = EXLQ::from("example.Excel")
+$result = EXLQ::from("example.xls")
         ->select('*')
         ->orderBy('id')
         ->limit(10)
@@ -142,19 +142,19 @@ You can add criteria and specify limit and offset for your query results:
 ```php
 
 // To Get Count
-$result = EXLQ::from("example.Excel")->count();
+$result = EXLQ::from("example.xls")->count();
 
 // To Get Sum
-$result = EXLQ::from("example.Excel")->sum('age');
+$result = EXLQ::from("example.xls")->sum('age');
 
 // To Get Average
-$result = EXLQ::from("example.Excel")->avg('age');
+$result = EXLQ::from("example.xls")->avg('age');
 
 // To Get row with minimum column value
-$result = EXLQ::from("example.Excel")->min('age');
+$result = EXLQ::from("example.xls")->min('age');
 
 // To Get row with maximum column value
-$result = EXLQ::from("example.Excel")->max('age');
+$result = EXLQ::from("example.xls")->max('age');
 
 ```
 
