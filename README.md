@@ -21,7 +21,7 @@ This package is suitable for you if you need to perform some queries on:
 To install the package, you can use [Composer](https://getcomposer.org/):
 
 ```bash
-composer require ruhulfbr/EXLQ
+composer require ruhulfbr/excelq
 ```
 
 ## Basic Usage
