@@ -3,8 +3,8 @@
 **Query on Excel** allows you to perform queries on Excel.
 
 ## NOTE
-* <b>Supported Extensions: Please use `.xls` or `.xlsx`. </b>
-* <b>Please ensure Excel data is well-formatted. Follow `example.xls`, and `example.xlsx`</b>
+* Supported Extensions: Please use `.xls` or `.xlsx`. 
+* Please ensure Excel data is well-formatted. Follow `example.xls`, and `example.xlsx`.
 
 ## Use Cases
 
